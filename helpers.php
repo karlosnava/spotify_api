@@ -34,7 +34,7 @@ function getToken()
         $_SESSION['token'] = $response['access_token'];
     }
 
-    header("Location ./");
+    header("Refresh:0");
 }
 
 if (!checkToken()) {
